@@ -43,7 +43,12 @@ Priority-Encoder-RTL/
 In results/transcript—for logs and behavioral data.
 In results/Screenshot.png—for visual waveforms or signals.
 In scripts/coverage_rpt.txt (if coverage was measured).
-What’s Inside
+
+
+---
+
+
+##  What’s Inside
 
 RTL (priority_enc.v)
 Implements the 8-to-3 encoder by prioritizing the highest active bit among multiple assertions.
@@ -62,17 +67,30 @@ coverage_rpt.txt: Functional coverage output (if coverage was enabled).
 Visualization
 A screenshot (waveform) illustrates signal transitions or output behavior.
 
-Tools & Requirements
+
+---
+
+
+##  Tools & Requirements
 
 Hardware Description: Verilog / SystemVerilog
 
 Verification Environment: ModelSim, QuestaSim, or compatible simulators
 
-License
+
+---
+
+
+##  License
 
 Distributed under the MIT License. Check the LICENSE file for more details.
 
-Learning Points
+
+
+---
+
+
+## Learning Points
 
 Understanding how priority encoding resolves multiple active inputs.
 
