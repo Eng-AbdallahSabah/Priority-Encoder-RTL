@@ -1,0 +1,65 @@
+# //  Questa Sim-64
+# //  Version 2024.1 win64 Feb  1 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do run.do
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 01:17:49 on Aug 31,2025
+# vlog -reportprogress 300 priority_enc.v priority_enc_tb.sv "+cover" -covercells 
+# -- Compiling module priority_enc
+# -- Compiling module priority_enc_tb
+# 
+# Top level modules:
+# 	priority_enc_tb
+# End time: 01:17:49 on Aug 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.priority_enc_tb -coverage 
+# Start time: 01:17:49 on Aug 31,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.priority_enc_tb(fast)
+# Loading work.priority_enc(fast)
+# correct result
+# PASS: correct result - Y=0, valid=0 for input D=0000
+# PASS: correct result - Y=0, valid=1 for input D=1000
+# PASS: correct result - Y=1, valid=1 for input D=0100
+# PASS: correct result - Y=1, valid=1 for input D=1100
+# PASS: correct result - Y=2, valid=1 for input D=0010
+# PASS: correct result - Y=2, valid=1 for input D=1010
+# PASS: correct result - Y=2, valid=1 for input D=0110
+# PASS: correct result - Y=2, valid=1 for input D=1110
+# PASS: correct result - Y=3, valid=1 for input D=0001
+# PASS: correct result - Y=3, valid=1 for input D=1001
+# PASS: correct result - Y=3, valid=1 for input D=0101
+# PASS: correct result - Y=3, valid=1 for input D=0011
+# PASS: correct result - Y=3, valid=1 for input D=1101
+# PASS: correct result - Y=3, valid=1 for input D=1011
+# PASS: correct result - Y=3, valid=1 for input D=0111
+# PASS: correct result - Y=3, valid=1 for input D=1111
+# correct result
+# ** Note: $stop    : priority_enc_tb.sv(43)
+#    Time: 68 ns  Iteration: 1  Instance: /priority_enc_tb
+# Break in Module priority_enc_tb at priority_enc_tb.sv line 43
+# QuestaSim-64 vcover 2024.1 Coverage Utility 2024.02 Feb  1 2024
+# Start time: 01:17:55 on Aug 31,2025
+# vcover report priority_enc_tb.ucdb -details -annotate -all -output coverage_rpt.txt 
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Error: (vcover-7) Failed to open UCDB file "priority_enc_tb.ucdb" in read mode.
+# ** Note: (vcover-17388) No matching coverage data found in file 'priority_enc_tb.ucdb'.
+# End time: 01:17:55 on Aug 31,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
