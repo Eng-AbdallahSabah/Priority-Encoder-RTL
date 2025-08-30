@@ -48,6 +48,17 @@ In scripts/coverage_rpt.txt (if coverage was measured).
 ---
 
 
+## 📊 Simulation Waveform
+
+Below is a waveform captured using **QuestaSim**, showing the write and read operations on the RAM.  
+The simulation confirms correct memory behavior across different clock cycles.
+
+![Simulation Waveform](doc/Wave.png)
+
+
+---
+
+
 ##  What’s Inside
 
 RTL (priority_enc.v)
