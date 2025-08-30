@@ -53,7 +53,7 @@ In scripts/coverage_rpt.txt (if coverage was measured).
 Below is a waveform captured using **QuestaSim**, showing the write and read operations on the RAM.  
 The simulation confirms correct memory behavior across different clock cycles.
 
-![Simulation Waveform](doc/Wave.png)
+![Simulation Waveform](results/Wave.png)
 
 
 ---
